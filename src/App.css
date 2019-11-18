@@ -1,22 +1,100 @@
-.App {
-  text-align: center;
+body,
+html {
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+  padding: 8px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header > * {
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.75rem;
+}
+
+.tuner-container {
+  position: absolute;
+  left: 68px;
+  top: 150px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 266px 266px 266px;
+  grid-template-rows: 160px 80px 62px 80px 62px 80px 190px;
+}
+
+.noteStyle {
+  background-color: lightgrey;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  justify-self: center;
+  align-self: center;
+}
+
+.noteStyle:hover {
+  background-color: #4caf50;
+  cursor: pointer;
+
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.noteStyle:focus {
+  outline: 0;
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+  left: 50px;
+  top: 150px;
+}
+
+.checkbox {
+  grid-column: 3;
+  grid-row: 7;
+  justify-self: center;
+  align-self: center;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkbox label {
+  font-size: 25px;
+}
+
+.E {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.A {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.D {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.G {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.B {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.e {
+  grid-column: 3;
+  grid-row: 6;
 }
