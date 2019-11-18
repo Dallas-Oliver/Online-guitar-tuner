@@ -14,19 +14,6 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // this.noteStyles = {
-    //   E: {
-    //     backgroundColor: "#4caf50",
-    //     border: "none",
-    //     color: "white",
-    //     padding: "15px 32px",
-    //     textAlign: "center",
-    //     textDecoration: "none",
-    //     display: "inlineBlock",
-    //     fontSize: "16px"
-    //   }
-    // };
-
     this.state = {
       notes: [
         { note: "E", tone: E },
@@ -70,7 +57,6 @@ class App extends Component {
               playSound={e => this.playSound(e)}
               note={note.note}
               className={`noteStyle ${note.note}`}
-              // style={this.noteStyles[note.note]}
             />
           ))}
           <div className="checkbox">
