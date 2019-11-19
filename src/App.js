@@ -48,7 +48,7 @@ class App extends Component {
       <div className="App">
         <div className="header">
           <h1>Online Guitar Tuner</h1>
-          <p>tap the note, tune the string to the tone.</p>
+          <p>Tap the note, tune the string to the tone.</p>
         </div>
         <div className="tuner-container">
           {this.state.notes.map(note => (
